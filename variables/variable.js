@@ -40,3 +40,21 @@ var b = 15;
 
 //  d = "hello";    --------> No outcome
 //  document.write(d);
+
+
+// Checking the scope of var, let and const
+
+document.write("<h4>Scope of var, let and const</h4>");
+
+var x = 45;
+let y = "data";
+var z = null;
+var i = undefined;
+{
+    let y = 'this';
+    document.write("<br>",y);
+    var x = 46;
+    document.write("<br>",x);
+}
+document.write("<br>",y);
+document.write("<br>",x);

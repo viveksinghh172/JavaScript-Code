@@ -1,6 +1,6 @@
 // Object ----> It's a key value pair
 
-const item = {
+/*const item = {
     "first": true,
     "second": false,
     "third": 67,
@@ -21,4 +21,21 @@ const a = {
 a['friend'] = "Shubham"
 a['teacher'] = "Ajay"
 document.write(a['friend']);
-document.write("<br>",a['friend']," ",a['teacher']);
+document.write("<br>",a['friend']," ",a['teacher']);*/
+
+
+
+// Program to print the marks of a student in an object using for loop
+
+let marks = {
+    hindi: 90,
+    english: 80,
+    maths: 80,
+    science: 85
+};
+// using for loop
+for (let [key, value] of Object.entries(marks))
+{
+    //console.log("The marks in " + Object.keys(marks)[i] + "are" + marks[Object.keys[marks][i]])
+    document.write(`${key}: ${value}`);
+}
